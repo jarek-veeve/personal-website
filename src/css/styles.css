@@ -30,6 +30,24 @@ html, body {
     background-position: center center;
     background-attachment: fixed;
 }
+
+/* HERO SECTION START */
+
+.contact-button {
+    border: 1px solid white;
+    border: 1px solid #FFF;
+    font-size: 3.5rem;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 2% 7%;
+}
+
+#left-corner {
+    padding-top: 3%;
+}
+
+/* HERO SECTION END */
+
 /* PROFILE SECTION START*/
 
 #profile {
