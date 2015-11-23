@@ -36,14 +36,44 @@ html, body {
 .contact-button {
     border: 1px solid white;
     border: 1px solid #FFF;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: white;
     font-family: 'Noto Sans', sans-serif;
     padding: 2% 7%;
+    border-radius: 7px;
+
+}
+
+.contact-button-container {
+    display:none;
 }
 
 #left-corner {
     padding-top: 3%;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none
+}
+
+/* visited link */
+a:visited {
+    color: white;
+    text-decoration: none
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+    text-decoration: none
+}
+
+/* selected link */
+a:active {
+    color: white;
+    text-decoration: none;
 }
 
 /* HERO SECTION END */
