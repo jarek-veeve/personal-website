@@ -313,21 +313,18 @@ p {
     /* Profile */
     .profile_title {
         z-index: 1;
-        font-size: 3rem;
-        color: #173e43;
-        margin-top: 0;
-        margin-bottom: 0;
+        font-size: 2.7rem;
+        color: #173E43;
+        margin-bottom: 5px;
     }
 
     .profile_short_text {
-        font-size: 2.5rem;
+        font-size: 1.9rem;
     }
     hr {
         border-color: #333;
         opacity: 0.2;
-        width: 125%;
-        margin-left: -45px;
-        margin-bottom: 0px;
+        width: 100%;
         margin-top: 10px;
     }
 
@@ -350,7 +347,7 @@ p {
         z-index: 1;
         font-size: 2rem;
         color: #173e43;
-        padding-top: 20px;
+        padding-top: 10px;
         text-align: center;
     }
 
@@ -378,6 +375,11 @@ p {
 
     .row {
         margin: -10px -60px 0px;
+    }
+
+    .container {
+        max-width: 1280px;
+        padding: 15px 65px;
     }
     /* Profile END*/
 }
