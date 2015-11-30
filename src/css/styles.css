@@ -39,17 +39,24 @@ html, body {
     font-size: 2.5rem;
     color: white;
     font-family: 'Noto Sans', sans-serif;
-    padding: 2% 7%;
+    padding: 2% 10%;
     border-radius: 7px;
 
 }
 
 .contact-button-container {
     display:none;
+
+}
+
+.contact-button:hover {
+    background-color: #FFFFFF;
+    color: #173e43;
 }
 
 #left-corner {
     padding-top: 3%;
+    height: 10rem;
 }
 
 /* unvisited link */
@@ -76,6 +83,73 @@ a:active {
     text-decoration: none;
 }
 
+.welcome-box {
+    padding-top: 22%;
+}
+
+#welcome-container-left {
+    width:20%;
+}
+#welcome-container {
+    width:60%;
+}
+#welcome-container-right {
+    width: 20%
+}
+.welcome-text {
+    background-color: #FFFFFF;
+    opacity: 0.7;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border-radius: 7px;
+    border: 1px solid #333;
+    display:none;
+}
+
+#first-line {
+    z-index: 1;
+    font-size: 4rem;
+    color: #173e43;
+}
+
+#second-line {
+    z-index: 1;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#third-line {
+    z-index: 1;
+    font-size: 4rem;
+    color: #173e43;
+    font-weight: bold;
+}
+
+.jumbotron .scroll-down {
+    height: 80px;
+    width: 110px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    background-color: #222;
+    text-align: center;
+    z-index: 6;
+}
+
+jumbotron .scroll-down .glyphicon {
+    color: #FFF;
+    font-size: 30px;
+    padding-right: 2px;
+    padding-top: 20px;
+    animation-name: wiggle;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
 /* HERO SECTION END */
 
 /* PROFILE SECTION START*/
@@ -110,9 +184,12 @@ a:active {
 
 #about_container {
     padding-left:0px;
-    width: 310px;
+   // width: 280px;
 }
-
+#image_container {
+    //width: 260px;
+    padding: 0;
+}
 .about_title {
     z-index: 1;
     font-size: 3rem;
@@ -155,10 +232,7 @@ hr {
 }
 
 .row {
-    margin-right: -60px;
-    margin-left: -60px;
-    margin-top: -10px;
-    margin-bottom: 85px;
+    margin: 0px;
 }
 /* PROFILE SECTION END */
 
@@ -311,15 +385,8 @@ p {
         padding-bottom: 10px;
     }
 
-    #image_container {
-        width: 100%;
-        padding: 0;
-    }
 
-    #details_container {
-        width: 100%;
-        padding: 0;
-    }
+
     .about_title {
         z-index: 1;
         font-size: 2.3rem;
