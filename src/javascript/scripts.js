@@ -1,11 +1,34 @@
+/* global $ */
 /**
  * Created by Jarek on 14/10/2015.
  */
 $(document).ready(function(){
+
+    $('#typed').typed({
+            
+            stringsElement: $('#typed-hi'),
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: true,
+            contentType: 'html', // loop
+            loopCount: true,
+
+        });
+    $('#typed').typed({
+            
+            stringsElement: $('#typed-developer'),
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: true,
+        });
+    
     setTimeout(show_contact, 4000)
     setTimeout(show_text, 2000)
-    setTimeout(show_welcome_text, 2000)
-
+    setTimeout(show_welcome_text, 2000)         
+        
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
 
