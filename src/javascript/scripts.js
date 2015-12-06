@@ -10,7 +10,8 @@ $(document).ready(function(){
     setTimeout(show_explore_line, 2500);
     setTimeout(show_tex_container, 2500);
     setTimeout(show_resume_social, 4000);
-    setTimeout(bounce, 5000);
+    setTimeout(show_arrow_down, 5000);
+    setTimeout(bounce, 2000);
 
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
@@ -46,6 +47,12 @@ function bounce()
 function show_contact()
 {
     $('.contact-button-container').fadeIn(2000).css('display', 'inline');
+}
+
+function show_arrow_down()
+{
+    $('.arrow-down').fadeIn(2000).css('display', 'inherit');
+
 }
 
 function show_resume_social()

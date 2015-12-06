@@ -243,20 +243,16 @@ p{
     margin: auto;
     background: #173e43;
     opacity: 0.7;
+    padding-left: 35px;
+    display:none;
 }
 
 .glyphicon.glyphicon-chevron-down {
     color: #FFF;
     font-size: 30px;
-    padding-right: 2px;
-    padding-top: 20px;
-    animation-name: wiggle;
-    animation-duration: 1.2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-}
+    margin:auto;
 
+}
 /* HERO SECTION END */
 
 /* PROFILE SECTION START*/
