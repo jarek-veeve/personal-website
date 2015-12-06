@@ -4,31 +4,14 @@
  */
 $(document).ready(function(){
 
-    $('#typed').typed({
-            
-            stringsElement: $('#typed-hi'),
-            typeSpeed: 30,
-            backDelay: 500,
-            loop: true,
-            contentType: 'html', // loop
-            loopCount: true,
-
-        });
-    $('#typed').typed({
-            
-            stringsElement: $('#typed-developer'),
-            typeSpeed: 30,
-            backDelay: 500,
-            loop: true,
-            contentType: 'html', // or text
-            // defaults to false for infinite loop
-            loopCount: true,
-        });
-    
     setTimeout(show_contact, 4000)
     setTimeout(show_text, 2000)
-    setTimeout(show_welcome_text, 2000)         
-        
+    setTimeout(show_hi_line, 2500);
+    setTimeout(show_explore_line, 2500);
+    setTimeout(show_tex_container, 2500);
+    setTimeout(show_resume_social, 4000);
+    setTimeout(bounce, 5000);
+
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
 
@@ -50,23 +33,75 @@ $(document).ready(function(){
 });
 
 
-function show_contact(){
+function bounce()
+{
+    setInterval(function(){
+        $(".glyphicon").effect( "bounce",
+            {times:4}, 1500 );
+    },1500);
+
+
+}
+
+function show_contact()
+{
     $('.contact-button-container').fadeIn(2000).css('display', 'inline');
 }
 
-function show_welcome_text(){
+function show_resume_social()
+{
+    $('.resume-social').fadeIn(2000).css('display', 'inline');
+}
+
+function show_tex_container()
+{
+    $('.welcome-text-container').fadeIn(2000).css('display', 'inherit');
+}
+
+function show_welcome_text()
+{
     $('.welcome-text').slideDown(1300).css('display', 'inherit');
 }
 
-function show_text(){
+function show_text()
+{
     $('#server').text('Client');
     setTimeout(show_text2, 800);
     //show_text2();
 }
 
-function show_text2(){
+function show_text2()
+{
     $('#server').text('Server');
     setTimeout(show_text, 800);
+}
+
+function show_hi_line()
+{
+    $('#typed-line1').typed({
+
+        stringsElement: $('#typed-hi'),
+        typeSpeed: 60,
+        backDelay: 2000,
+        loop: true,
+        contentType: 'html', // loop
+        loopCount: true,
+
+    });
+}
+
+function show_explore_line()
+{
+    $('#typed-line2').typed({
+
+        stringsElement: $('#typed-client'),
+        typeSpeed: 60,
+        backDelay: 1000,
+        loop: true,
+        contentType: 'html', // or text
+        // defaults to false for infinite loop
+        loopCount: true,
+    });
 }
 
 
