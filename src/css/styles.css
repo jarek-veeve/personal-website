@@ -17,21 +17,14 @@ html, body {
     background-attachment: fixed;
 }
 
-#hero2 {
+#hero3 {
     background: url(../images/desk.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
 
-#hero3 {
-    background: url(../images/education.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-/* HERO SECTION START */
+/************* HERO SECTION START *************/
 
 .contact-button {
     border: 1px solid white;
@@ -253,9 +246,9 @@ p{
     margin:auto;
 
 }
-/* HERO SECTION END */
+/************* HERO SECTION END *************/
 
-/* PROFILE SECTION START*/
+/************* PROFILE SECTION START *************/
 
 #profile {
     background: #FFF none repeat scroll 0% 0%;
@@ -336,7 +329,22 @@ hr {
 .row {
     margin: 0px;
 }
-/* PROFILE SECTION END */
+/************* PROFILE SECTION END *************/
+
+/************* EDUCATION SECTION START *************/
+#education {
+    background: url(../images/education.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.education-img-cover {
+    background: rgba(0, 0, 0, 0.3) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
+    height: 100vh;
+}
+
+/************* EDUCATION SECTION END *************/
 
 #contact {
     background-color: rgba(12, 2, 15, 0.2)
@@ -355,7 +363,7 @@ hr {
     height: 100vh;
 }
 
-.hero .image-cover {
+.image-cover {
     background: rgba(0, 0, 0, 0.3) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
     height: 100vh;
 }
