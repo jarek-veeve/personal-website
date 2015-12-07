@@ -227,14 +227,21 @@ Main components
 }
 .cd-timeline-content .cd-read-more {
     float: right;
-    padding: .8em 1em;
-    background: #173e43;
-    color: white;
+    padding: 0.5em 0.9em;
+    background: #173E43 none repeat scroll 0% 0%;
+    color: #FFF;
     border-radius: 0.25em;
 }
-.no-touch .cd-timeline-content .cd-read-more:hover {
-    background-color: #173e43;
+.cd-read-more:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1pt solid #173e43;
 }
+
+.box-title {
+    float:left;
+}
+
 .cd-timeline-content .cd-date {
     float: left;
     padding: .8em 0;
@@ -260,8 +267,7 @@ Main components
         font-size: 1rem;
     }
     .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-        font-size: 14px;
-        font-size: 0.875rem;
+        font-size: 1.2rem;
     }
 }
 @media only screen and (min-width: 1170px) {
