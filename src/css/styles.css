@@ -341,7 +341,7 @@ hr {
 
 .education-img-cover {
     background: rgba(0, 0, 0, 0.3) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
-    height: 100vh;
+   /* height: 100vh;*/
 }
 
 /************* EDUCATION SECTION END *************/
