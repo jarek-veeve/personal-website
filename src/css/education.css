@@ -1,3 +1,9 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
 /* --------------------------------
 
 Modules - reusable parts of our design
@@ -21,27 +27,6 @@ Modules - reusable parts of our design
 Main components
 
 -------------------------------- */
-header {
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
-    background: #303e49;
-}
-header h1 {
-    color: white;
-    font-size: 18px;
-    font-size: 1.125rem;
-}
-@media only screen and (min-width: 1170px) {
-    header {
-        height: 300px;
-        line-height: 300px;
-    }
-    header h1 {
-        font-size: 24px;
-        font-size: 1.5rem;
-    }
-}
 
 #cd-timeline {
     position: relative;
@@ -106,16 +91,18 @@ header h1 {
     border-radius: 50%;
     box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
+
 .cd-timeline-img img {
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 25px;
+    height: 28px;
     position: relative;
-    left: 50%;
-    top: 50%;
+    left: 34.8%;
+    top: 29%;
     margin-left: -12px;
     margin-top: -12px;
 }
+
 .cd-timeline-img.cd-picture {
     background: #173e43;
 }
@@ -130,6 +117,18 @@ header h1 {
         -webkit-transform: translateZ(0);
         -webkit-backface-visibility: hidden;
     }
+
+    .cd-timeline-img img {
+        display: block;
+        width: 45px;
+        height: 48px;
+        position: relative;
+        left: 34.8%;
+        top: 29%;
+        margin-left: -12px;
+        margin-top: -12px;
+    }
+
     .cssanimations .cd-timeline-img.is-hidden {
         visibility: hidden;
     }
@@ -139,6 +138,7 @@ header h1 {
         -moz-animation: cd-bounce-1 0.6s;
         animation: cd-bounce-1 0.6s;
     }
+
 }
 
 @-webkit-keyframes cd-bounce-1 {
@@ -228,12 +228,12 @@ header h1 {
 .cd-timeline-content .cd-read-more {
     float: right;
     padding: .8em 1em;
-    background: #acb7c0;
+    background: #173e43;
     color: white;
     border-radius: 0.25em;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
-    background-color: #bac4cb;
+    background-color: #173e43;
 }
 .cd-timeline-content .cd-date {
     float: left;
@@ -281,11 +281,11 @@ header h1 {
     }
     .cd-timeline-content .cd-date {
         position: absolute;
-        width: 100%;
-        left: 122%;
+        width: 80%;
+        left: 95%;
         top: 6px;
-        font-size: 16px;
-        font-size: 1rem;
+        font-size: 2rem;
+        color: #ffffff;
     }
     .cd-timeline-block:nth-child(even) .cd-timeline-content {
         float: right;
