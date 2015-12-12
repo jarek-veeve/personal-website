@@ -268,9 +268,10 @@ Main components
     }
 
     .cd-timeline-content p {
-        font-size: 1.2em;
+        font-size: 1em;
         font-family: "Noto Sans",sans-serif;
         text-align: left;
+        color:#000000;
     }
 
     .cd-timeline-content ul {
@@ -279,6 +280,10 @@ Main components
     li span {
         font-size: 1em;
         font-weight: bold;
+    }
+
+    li {
+        padding-bottom: 10px;
     }
 
     .tick-uni {
@@ -291,12 +296,17 @@ Main components
     }
 
     .subtitle {
-       font-weight: 1em;
+        font-size:1em;
     }
 
     .text {
+        font-size:1em;
         font-weight: normal;
     }
+    .academic-content {
+       font-size: 1em;
+    }
+
     .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
         font-size: 1.2rem;
     }
