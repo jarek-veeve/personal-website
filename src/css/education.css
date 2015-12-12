@@ -221,10 +221,13 @@ Main components
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     display: inline-block;
 }
-.cd-timeline-content p {
-    margin: 1em 0;
+.cd-timeline-content ul {
+    margin: 2em 0;
     line-height: 1.6;
+    font-family: "Noto Sans",sans-serif;
+    text-align: left;
 }
+
 .cd-timeline-content .cd-read-more {
     float: right;
     padding: 0.5em 0.9em;
@@ -259,12 +262,40 @@ Main components
 }
 @media only screen and (min-width: 768px) {
     .cd-timeline-content h2 {
-        font-size: 20px;
-        font-size: 1.25rem;
+        font-size: 1.4em;
+        color: #173e43;
+        font-family: "Noto Sans",sans-serif;
     }
+
     .cd-timeline-content p {
-        font-size: 16px;
-        font-size: 1rem;
+        font-size: 1.2em;
+        font-family: "Noto Sans",sans-serif;
+        text-align: left;
+    }
+
+    .cd-timeline-content ul {
+        list-style: none;
+    }
+    li span {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .tick-uni {
+        width: 5%;
+        vertical-align: -0.4em;
+    }
+
+    .title {
+       font-size:1em;
+    }
+
+    .subtitle {
+       font-weight: 1em;
+    }
+
+    .text {
+        font-weight: normal;
     }
     .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
         font-size: 1.2rem;
