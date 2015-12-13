@@ -344,7 +344,62 @@ hr {
    /* height: 100vh;*/
 }
 
-/************* EDUCATION SECTION END *************/
+/************* SKILLS SECTION END *************/
+
+/************* SKILLS SECTION START *************/
+
+#skills {
+    background-color: #173e43;
+    height: 100vh;
+}
+
+#row-skills {
+    border: 2pt #ffffff solid;
+    width: 100%;
+    height: 100%;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 20vh;
+    height: 20vh;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    background-color: #ffffff;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    background-color: red;
+}
+/************* SKILLS SECTION END *************/
 
 #contact {
     background-color: rgba(12, 2, 15, 0.2)
