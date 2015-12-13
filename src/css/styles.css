@@ -350,7 +350,7 @@ hr {
 
 #skills {
     background-color: #173e43;
-    height: 100vh;
+    height: auto;
 }
 
 #row-skills {
@@ -360,20 +360,22 @@ hr {
 }
 
 /* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
+.flip-container .flipper:hover, .flip.hover {
     transform: rotateY(180deg);
 }
 
-.flip-container, .front, .back {
-    width: 20vh;
-    height: 20vh;
-}
+.flip-container{
+     width: 100px;
+     height: 100px;
+ }
+
 
 /* flip speed goes here */
 .flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
-
+    width: 100px;
+    height: 100px;
     position: relative;
 }
 
@@ -384,6 +386,7 @@ hr {
     position: absolute;
     top: 0;
     left: 0;
+
 }
 
 /* front pane, placed above back */
@@ -392,12 +395,63 @@ hr {
     /* for firefox 31 */
     transform: rotateY(0deg);
     background-color: #ffffff;
+    width: 100px;
+    height: 100px;
 }
 
 /* back, initially hidden pane */
 .back {
     transform: rotateY(180deg);
     background-color: red;
+    width: 100px;
+    height: 100px;
+}
+/* flip the pane when hovered */
+.flip-container2 .flipper2:hover, .flip.hover {
+    transform: rotateY(180deg);
+}
+
+.flip-container2{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* flip speed goes here */
+.flipper2 {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front2, .back2 {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+/* front pane, placed above back */
+.front2 {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    background-color: #ffffff;
+    width: 100px;
+    height: 100px;
+}
+
+/* back, initially hidden pane */
+.back2{
+    transform: rotateY(180deg);
+    background-color: red;
+    width: 100px;
+    height: 100px;
 }
 /************* SKILLS SECTION END *************/
 
@@ -564,9 +618,6 @@ p {
         text-align: center;
     }
 
-    .row {
-        margin: -10px -60px 0px;
-    }
     /* Profile END*/
 }
 
