@@ -27,6 +27,13 @@ $(document).ready(function(){
         });
     });
 
+
+    $("#card").flip({
+        axis: 'x',
+        trigger: 'hover',
+        reverse: true
+    });
+
     $('.img_circle').hover(function(){
         $(this).css('box-shadow', '0px 0px 2px 7px #173e43');
     }, function(){
