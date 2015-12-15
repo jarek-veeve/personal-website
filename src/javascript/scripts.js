@@ -19,19 +19,12 @@ $(document).ready(function(){
         var target = this.hash;
         var $target = $(target);
 
-        
+
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top
         }, 900, 'swing', function () {
             window.location.hash = target;
         });
-    });
-
-
-    $("#card").flip({
-        axis: 'x',
-        trigger: 'hover',
-        reverse: true
     });
 
     $('.img_circle').hover(function(){
@@ -118,10 +111,3 @@ function show_explore_line()
         loopCount: true,
     });
 }
-
-
-
-
-
-
-
